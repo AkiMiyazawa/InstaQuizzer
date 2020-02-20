@@ -1,0 +1,383 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Toplevel" id="content_creation_toplevel">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="content_creation_frame">
+        <property name="height">500</property>
+        <property name="width">1000</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="ttk.Entry" id="question_entry">
+            <property name="justify">left</property>
+            <property name="textvariable">string:question_entry</property>
+            <property name="validate">none</property>
+            <property name="width">100</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_correct">
+            <property name="textvariable">string:correct_answer</property>
+            <property name="width">100</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_wrong_1">
+            <property name="textvariable">string:entry_wrong1</property>
+            <property name="width">100</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_wrong_2">
+            <property name="textvariable">string:entry_wrong2</property>
+            <property name="width">100</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_wrong_3">
+            <property name="textvariable">string:entry_wrong3</property>
+            <property name="width">100</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_wrong_4">
+            <property name="textvariable">string:entry_wrong4</property>
+            <property name="width">100</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="entry_wrong_5">
+            <property name="textvariable">string:entry_wrong5</property>
+            <property name="width">100</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="question_label">
+            <property name="text" translatable="yes">Question 1: </property>
+            <property name="textvariable">string:question_label</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="answer_correct_label">
+            <property name="text" translatable="yes">Correct Answer:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_wrong_1">
+            <property name="text" translatable="yes">Wrong 1:</property>
+            <property name="textvariable">string:label_wrong_1</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_wrong_2">
+            <property name="text" translatable="yes">Wrong 2:</property>
+            <property name="textvariable">string:label_wrong_2</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_wrong_3">
+            <property name="text" translatable="yes">Wrong 3:</property>
+            <property name="textvariable">string:label_wrong_3</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">4</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_wrong_4">
+            <property name="text" translatable="yes">Wrong 4:</property>
+            <property name="textvariable">string:label_wrong_4</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="label_wrong_5">
+            <property name="text" translatable="yes">Wrong 5:</property>
+            <property name="textvariable">string:label_wrong_5</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">6</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="go_back_button">
+            <property name="command">onclick_go_back_button</property>
+            <property name="text" translatable="yes">Back to Previous Question</property>
+            <property name="textvariable">string:go_back_button</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="row">7</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="finish_questions_button">
+            <property name="command">onclick_finish_questions_button</property>
+            <property name="text" translatable="yes">Done Creating Questions</property>
+            <property name="textvariable">string:finish_questions_button</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">7</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="next_question_button">
+            <property name="command">onclick_next_question_button</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">Create Next Question</property>
+            <property name="textvariable">string:next_question_button</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">7</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="tk.Toplevel" id="presentation_toplevel">
+    <property name="background">#0014ff</property>
+    <property name="height">200</property>
+    <property name="highlightbackground">#0014ff</property>
+    <property name="highlightcolor">#0014ff</property>
+    <property name="resizable">both</property>
+    <property name="width">200</property>
+    <child>
+      <object class="tk.Frame" id="presentation_frame">
+        <property name="background">#1000ff</property>
+        <property name="height">600</property>
+        <property name="highlightbackground">#1000ff</property>
+        <property name="highlightcolor">#1000ff</property>
+        <property name="width">800</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="padx">0</property>
+          <property name="pady">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="tk.Button" id="back_button">
+            <property name="command">onclick_back_presentation</property>
+            <property name="highlightbackground">#1000ff</property>
+            <property name="text" translatable="yes">Previous Question</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="next_button">
+            <property name="command">onclick_next_presentation</property>
+            <property name="highlightbackground">#1000ff</property>
+            <property name="text" translatable="yes">Next Question</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="question_text">
+            <property name="background">#0014ff</property>
+            <property name="font">{Helvetica} 36 {}</property>
+            <property name="text" translatable="yes">Question:
+A:
+B:
+C:
+D:
+E:</property>
+            <property name="textvariable">string:question_text_presentation</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">4</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">s</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="toggle_accept_answers_button">
+            <property name="command">onclick_toggle_accept_answers</property>
+            <property name="disabledforeground">#bbb3bd</property>
+            <property name="font">TkTextFont</property>
+            <property name="highlightbackground">#1000ff</property>
+            <property name="text" translatable="yes">Start Accepting Answers</property>
+            <property name="textvariable">string:accept_answers_text</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="show_data_button">
+            <property name="command">onclick_show_data</property>
+            <property name="disabledforeground">#bbb3bd</property>
+            <property name="font">TkTextFont</property>
+            <property name="highlightbackground">#1000ff</property>
+            <property name="text" translatable="yes">Show Question Data</property>
+            <property name="textvariable">string:show_data_text</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="tk.Toplevel" id="mainmenu_toplevel">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="main_menu_frame">
+        <property name="height">200</property>
+        <property name="width">500</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">4</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="main_menu_label">
+            <property name="text" translatable="yes">MyClicker Main Menu</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="pygubu.builder.widgets.pathchooserinput" id="file_path">
+            <property name="textvariable">string:file_path</property>
+            <property name="type">file</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="new_presentation_button">
+            <property name="command">onclick_new_presentation</property>
+            <property name="text" translatable="yes">Create New Presentation</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="open_presentation_button">
+            <property name="command">onclick_open_presentation</property>
+            <property name="text" translatable="yes">Open Selected Presentation</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="file_selector_label">
+            <property name="text" translatable="yes">Select File Path to Open or 
+Create (Creation will 
+overwrite any existing files)</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
