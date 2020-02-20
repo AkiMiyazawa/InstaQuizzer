@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Clicker</string>
+    <string name="enter_IP">Enter Host IP</string>
+    <string name="button_send">Join</string>
+    <string name="waiting">Waiting on Question</string>
+    <string name="enter_name">Enter UID</string>
+    <string name="enter_port">Enter Host Port</string>
+</resources>
