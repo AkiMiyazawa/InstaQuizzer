@@ -1,1 +1,3 @@
 # InstaQuizzer
+
+Instaquizzer is an audience response system that allows students to instantly answer questions posed by an instructor. For each system, there can be multiple clients and one server. The clients are the students and the server is managed by the instructor. The server is allows the instructor to write questions and answer choices and share it with the client. The server side can begin accepting response, stop accepting response, show answer statistics of questions, and move to the next question. The client side can connect with the server by knowing the server’s port number and IP address and send responses by clicking the A, B, C, D, E, F buttons.
